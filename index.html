@@ -175,7 +175,7 @@
     created: function () {
       console.log("requesting data");
 
-      fetch("https://cst-coursework-2.herokuapp.com/collection/lessons/").then(function (
+      fetch("https://vue-complete.herokuapp.com/collection/lessons/").then(function (
         response
       ) {
         response.json().then(function (json) {
@@ -198,7 +198,7 @@
           quantityOrdered: this.orders.quantity,
         };
 
-        fetch("https://cst-coursework-2.herokuapp.com/collection/orders/", {
+        fetch("https://vue-complete.herokuapp.com/collection/orders/", {
           method: "POST",
           mode: "cors",
           cache: "no-cache",
@@ -212,7 +212,7 @@
         for (var i = 0; i < this.cart.length; i++) {
           id = this.cart[i]._id;
           newSpaces = { spaces: this.cart[i].spaces };
-          fetch("https://cst-coursework-2.herokuapp.com/collection/lessons/" + id, {
+          fetch("https://vue-complete.herokuapp.com/collection/lessons/" + id, {
             method: "PUT", // set the HTTP method as 'PUT'
             headers: {
               "Content-Type": "application/json", // set the data type as JSON
@@ -226,7 +226,7 @@
             " " +
             this.orders.lastName
         );
-        window.location = 'https://cst-coursework-2.herokuapp.com/';
+        window.location = 'https://vue-complete.herokuapp.com/';
       },
       checkSubject(id) {
         let length = this.cart.length;
