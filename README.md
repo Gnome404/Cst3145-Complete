@@ -1,2 +1,1 @@
-# Cst3145-Complete
-A School Application
+# cw2-cst3145
