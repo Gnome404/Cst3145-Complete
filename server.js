@@ -8,7 +8,7 @@ let db;
 MongoClient.connect('mongodb+srv://Alex:Excelcior@1@beta1.qhmzt.mongodb.net',
     (err, client) => {
 
-        db = client.db('Coursework2')
+        db = client.db('webstore')
     });
 
 app.param('collectionName', (req, res, next, collectionName) => {
